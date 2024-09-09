@@ -1,0 +1,109 @@
+ 
+    /* Container to center the calculator */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+  
+    /* Calculator design */
+    .calculator {
+      background-color: #ff7f50;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 350px;
+      width: 100%;
+    }
+  
+    /* Result display */
+    .result {
+      padding: 15px;
+      font-size: 1.5em;
+      text-align: right;
+      margin-bottom: 15px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+  
+    /* Grid styling */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+  
+    /* Button styles */
+    .btn {
+      padding: 15px;
+      font-size: 1.2em;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    /* Buttons span 2 columns (for 0) */
+    .wide {
+      grid-column: span 2;
+    }
+  
+    /* Operation buttons */
+    .orange-btn {
+      background-color: #ff4500;
+      color: #fff;
+    }
+  
+    /* Hover effect */
+    .btn:hover {
+      background-color: #ff6347;
+    }
+  
+    /* Operation button hover */
+    .orange-btn:hover {
+      background-color: #ff6347;
+    }
+  
+    /* Responsive styling for mobile devices */
+    @media screen and (max-width: 768px) {
+      .calculator {
+        max-width: 100%;
+        padding: 15px;
+      }
+  
+      .btn {
+        padding: 12px;
+        font-size: 1em;
+      }
+  
+      .result {
+        font-size: 1.3em;
+        padding: 12px;
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      .btn.wide {
+        grid-column: span 2;
+      }
+  
+      .btn {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+  
+      .result {
+        font-size: 1.2em;
+        padding: 10px;
+      }
+    }
+ 
+  
