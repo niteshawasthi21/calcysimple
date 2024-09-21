@@ -1,25 +1,27 @@
+<div class="background-animation"></div>
 <div class="container">
+  <div class="calculator-wrapper">
+    <h1 class="calculator-heading">Calculator</h1>
     <div class="calculator">
       <!-- Display the input including the operation -->
       <input [(ngModel)]="displayOperand" class="result" readonly />
-  
+
       <div class="grid">
-        <!-- Number and Operation Buttons -->
         <button class="btn" (click)="appendNumber(7)">7</button>
         <button class="btn" (click)="appendNumber(8)">8</button>
         <button class="btn" (click)="appendNumber(9)">9</button>
         <button class="btn orange-btn" (click)="chooseOperation('/')">÷</button>
-  
+
         <button class="btn" (click)="appendNumber(4)">4</button>
         <button class="btn" (click)="appendNumber(5)">5</button>
         <button class="btn" (click)="appendNumber(6)">6</button>
         <button class="btn orange-btn" (click)="chooseOperation('*')">×</button>
-  
+
         <button class="btn" (click)="appendNumber(1)">1</button>
         <button class="btn" (click)="appendNumber(2)">2</button>
         <button class="btn" (click)="appendNumber(3)">3</button>
         <button class="btn orange-btn" (click)="chooseOperation('-')">−</button>
-  
+
         <button class="btn wide" (click)="appendNumber(0)">0</button>
         <button class="btn" (click)="appendDot()">.</button>
         <button class="btn orange-btn" (click)="clear()">C</button>
@@ -28,4 +30,4 @@
       </div>
     </div>
   </div>
-  
+</div>
